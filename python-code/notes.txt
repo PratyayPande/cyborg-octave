@@ -1,0 +1,161 @@
+merge the 2 time durations
+
+each interval:
+[[__,__],[__,__]]
+
+       interrval 2     [_______________________]
+		interval 1		   [______________________]
+							[_________________]
+								[______]
+
+initialise pointer ind with the start time of d d = intersection(d1,d2)
+
+find the start time of the next interval either of the 2 are occupied
+    initialise with variable s
+
+if the difference between ind and s is greater than meet_dur
+    then push an interval [ind,s] into the final array
+
+
+
+queue q
+
+initinalise init_index with start time of availability time
+
+re-initialise index with min start/end time of the next interval
+in both calendars after the time index and with k as pointer if the time is a start or end time
+
+# design function to evaluate the next closest time from some time t from both calendars
+
+if k indicates start time
+    then push '(' to q
+else if k indicates end time
+    then pop '(' from q
+
+
+
+Incoming calls = 88
+if q is empty,then execute following steps
+    initialise init_index = index
+    index = next time when
+outgoing calls = 163
+
+
+[0,1,0,0,1,0,1,0]
+set at current
+if next to next == 0
+    leap 2
+
+
+
+0 0 0
+0 0 1
+0 1 0
+1 0 0
+1 0 1
+
+
+backup or previous calendar code
+
+
+def find_merged_interval(in1, in2):
+    mer = []
+    if a[0] < b[0]:
+        mer.append(in1[0])
+    if a[0] >= b[0]:
+        mer.append(in2[0])
+    if a[1] > b[1]:
+        mer.append(in1[1])
+    if a[1] <= b[1]:
+        mer.append(in2[1])
+    return mer
+
+
+
+'''
+minmerge = minconverter(merge)
+n = minconverter(cal2)
+domerge = d1
+i1 = int(domerge)
+
+for i in range(0,len(cal2)):
+    for j in range(0,len(merge)):
+        if check_overlap(n[i],minmerge[j]):
+            merge[j] = find_merged_interval(cal2[i],merge[j])
+for i in range(0,len(merge)-1
+'''
+
+
+
+
+accepted unsorted array arr
+1. initialise integer count = 0
+2. find the sorted array of consecutive natural numbers srt
+3. compute the element wise difference of (arr - srt), dif = arr - srt
+4. find the index of the max value in dif and initilise
+   it to mx and the index of the min value and initialise it to mn
+5. interchange the elements in arr with with indexes mx and mn
+6. count = count + 1
+7. check if arr != srt. if true, then go to step 3. else go to step 8.
+8. print the valueof count
+
+
+
+Algorithm of New Year Chaos:
+
+1. input array q, with size ln
+2. initilise an integer array index of size ln
+3. i = 0.
+4. initialise boolean variable b with True
+5. initialise value of array index at index q[i]-1 as i; index[q[i]-1] = i
+6. if |q[i] - i - 1| > 2, go to step 7, else go to step 8.
+7. b = False
+8. i = i + 1
+9. if b if True and i < ln, then go to step 5; else go to step 10.
+10. i = 0
+11. if q[i] > q[i+1] and index[q[i+1]-1] > index[q[i]-1], then go to step 12;
+    else go to step .
+12. initialise integer t with the value of q[i]
+
+
+1. i = 0, mx = 0
+2. j = i+1
+3. if prices[j] - prices[i] > mx then go to step 4
+4. mx = prices[j] - prices[i]
+5. if k > 0, then execute step 6. else go to step 7
+6. mx1 = maxProfit(prices[j:],k-1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int t = arr[i], indarr = index.get(arr[i]),indip1 = index.ge    t(i+1);
+index.replace(arr[i], indip1);
+arr[i] = arr[index.get(i+1)];
+arr[index.get(i+1)] = t;
+//swap index
+index.replace(i+1, indarr);
+count++;
+for (int value : arr)
+    System.out.print(value + ", ");
+System.out.println(index);
+
+
+
+
+
+Calendar problem:
+
+
+step 1: declare the stack variable s
+step 2: create hashmap mapping the times to open or close times
+step 3: if reads open time 
