@@ -1,4 +1,5 @@
-% This one works!! Need to clarify on the initial value of theta
+% This one works!!
+% initial value of all coefficients theta(i) = 0 for 0 <= i <= n
 A = [1 2 4;3 4 5;4 6 7];
 m = size(A)(1);
 A = [ones(m,1) A];
